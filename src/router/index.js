@@ -1,27 +1,12 @@
-import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-
-Vue.use(VueRouter)
-
+import Notifications from "../components/Pages/Notification";
+import Vue from 'vue'
 const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
-]
+    { path: "/Notifications", component: Notifications},
+];
 
-const router = new VueRouter({
-  routes
-})
+const router = new VueRouter({routes:routes});
 
-export default router
+Vue.use(VueRouter);
+
+export default router;
