@@ -1,11 +1,11 @@
 <template>
     <v-container class="navBar">
-        <v-row style=" padding-top: 1vh">
-            <v-col cols="3" style="padding-left: 2vw;">
+        <v-row style="padding-top: 1vh">
+            <v-col cols="3" class="settingIcon">
                 <SettingsIcon/>
             </v-col>
             <v-spacer/>
-            <v-col cols="1" style="padding-left: 3vw; padding-top: 17px">
+            <v-col cols="1" class="homeIcon">
                 <v-icon>$home</v-icon>
             </v-col>
         </v-row>
@@ -66,6 +66,15 @@
 </script>
 
 <style scoped lang="scss">
+    .homeIcon{
+        padding-left: 3vw;
+        padding-top: 17px;
+    }
+
+    .settingIcon{
+        padding-left: 2vw;
+    }
+
     .navBar {
         background-color: #F8F8F8;
     }
