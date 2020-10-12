@@ -20,20 +20,18 @@
                                 :notifications="item.notifications"/>
             </v-col>
         </v-row>
-        <div class="socialMediaContainer">
+        <div class="footerContainer">
             <v-row class="footer">
                 <v-col>
                     <div class="footerSpacer">
                     </div>
                 </v-col>
             </v-row>
-            <div style="width: fit-content" class="socialMenu">
                 <v-row class="socialMenu">
                     <v-col v-for="item in socialMenu" :key="item.id">
                         <img :src="item.src" class="image">
                     </v-col>
                 </v-row>
-            </div>
         </div>
     </v-container>
 </template>
@@ -84,12 +82,6 @@
         margin-right: auto;
     }
 
-    .socialMediaContainer {
-        position: absolute;
-        bottom: 1vh;
-        width: 16.6667%;
-    }
-
     .footerSpacer {
         height: 5px;
         border: 1px solid #295A84;
@@ -104,5 +96,13 @@
 
     ::v-deep a {
         text-decoration: none;
+    }
+
+    .footerContainer{
+        position: absolute;
+        width: fit-content;
+        right: auto;
+        left: auto;
+        bottom: 0;
     }
 </style>

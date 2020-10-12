@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import Vuetify from 'vuetify/lib';
+import VueCompositionApi from '@vue/composition-api';
 import HomeIcon from "../components/Icons/HomeIcon";
 import SettingsIcon from "../components/Icons/SettingsIcon";
 import GroupIcon from "../components/Icons/GroupIcon";
@@ -9,13 +10,14 @@ import HeartIcon from "../components/Icons/HeartIcon";
 
 const Icons = {
     home: {component: HomeIcon},
-    settings:{component: SettingsIcon},
-    group:{component:GroupIcon},
-    heart:{component:HeartIcon},
-    megaPhone:{component:MegaPhone},
-    myCards:{component:MyCardsIcon},
+    settings: {component: SettingsIcon},
+    group: {component: GroupIcon},
+    heart: {component: HeartIcon},
+    megaPhone: {component: MegaPhone},
+    myCards: {component: MyCardsIcon},
 };
 
+Vue.use(VueCompositionApi);
 Vue.use(Vuetify);
 
 export default new Vuetify({
