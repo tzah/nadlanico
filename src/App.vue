@@ -2,7 +2,6 @@
   <v-app fill-height>
     <v-content>
       <shell>
-        <div slot="content"></div>
         <nav-bar slot="navBar"/>
       </shell>
     </v-content>

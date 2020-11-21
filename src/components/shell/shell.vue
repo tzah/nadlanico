@@ -1,10 +1,10 @@
 <template>
     <v-container fluid fill-height>
         <v-row no-gutters>
-            <v-col cols="3" class="navBar">
+            <v-col cols="2" class="navBar">
                 <slot name="navBar"/>
             </v-col>
-            <v-col cols="9" class="content">
+            <v-col cols="10" class="content">
                 <router-view/>
             </v-col>
         </v-row>
