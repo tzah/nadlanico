@@ -54,8 +54,8 @@ export default {
         {
           id: 1,
           icon: "megaPhone",
-          text: "Notifications",
-          linkTo: "Notifications",
+          text: "Map",
+          linkTo: "Map",
           notifications: 4,
         },
         {
@@ -137,7 +137,7 @@ width: 70%;
 .footerContainer {
   position: relative;
   width: 100%;
-  top: 28%;
+  top: 28vh;
   right: auto;
   left: auto;
   bottom: 0;

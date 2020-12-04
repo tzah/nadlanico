@@ -40,7 +40,7 @@ export default {
       // the map view will initially show the whole world
       view: new View({
         center: this.currentUserLocation,
-        zoom: 20,
+        zoom: 12,
         projection: "EPSG:4326",
         minZoom: 6,
         constrainResolution: true,

@@ -2,6 +2,7 @@ import VueRouter from 'vue-router';
 // import Notifications from "../components/Pages/Notification";
 // import LeafletMap from "../components/Map/LeafletMap";
 import OpenLayerMap from "../components/Map/OpenLayerMap";
+import card from "../components/Pages/cardsPage/cardPage";
 import NotFoundPage from "../components/Pages/notFoundPage/NotFoundPage";
 import Map from "../components/Map/Map.vue";
 import Vue from 'vue';
@@ -9,13 +10,13 @@ import Vue from 'vue';
 const routes = [
     // { path: "/Notifications", component: Map},
     // { path: "/OpenLayers", component: OpenLayerMap},
-    // { path: "/MyCardsPage", component: OpenLayerMap},
+    { path: "/MyCardsPage", component: card},
     {
         path: '/',
         redirect: '/home'
     },
     {
-        path: '/home',
+        path: '/Map',
         component: OpenLayerMap
     },
     {

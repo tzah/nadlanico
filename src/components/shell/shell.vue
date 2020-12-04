@@ -23,8 +23,12 @@
     }
     .content{
         height: 100vh;
+        overflow: scroll;
+        // direction: ltr;
     }
     .container{
         padding: unset;
+        overflow: hidden;
+        // direction: rtl;
     }
 </style>
