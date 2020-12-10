@@ -75,8 +75,8 @@ export default {
         {
           id: 4,
           icon: "group",
-          text: "Groups",
-          linkTo: "GroupsPage",
+          text: "Customers",
+          linkTo: "Customers",
           notifications: 3,
         },
       ],

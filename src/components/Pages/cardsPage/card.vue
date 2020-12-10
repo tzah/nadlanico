@@ -42,5 +42,17 @@ export default {
 <style scoped>
 .card {
   margin: 7px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease-in-out;
+  z-index: 1;
 }
+.card:hover + .card{
+   transform: scale(0.8, 0.8);
+}
+.card:hover {
+  transform: scale(1.1, 1.1);
+  z-index: 2;
+  border: 1px solid #295a84;
+}
+
 </style>
