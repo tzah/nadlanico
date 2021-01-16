@@ -1,16 +1,12 @@
 import VueRouter from 'vue-router';
-// import Notifications from "../components/Pages/Notification";
-// import LeafletMap from "../components/Map/LeafletMap";
 import OpenLayerMap from "../components/Map/OpenLayerMap";
 import card from "../components/Pages/cardsPage/cardPage";
 import NotFoundPage from "../components/Pages/notFoundPage/NotFoundPage";
-import Map from "../components/Map/Map.vue";
+import customersPage from "../components/Pages/customersPage/customersPage"
 import Vue from 'vue';
 
 const routes = [
-    // { path: "/Notifications", component: Map},
-    // { path: "/OpenLayers", component: OpenLayerMap},
-    { path: "/MyCardsPage", component: card},
+    { path: "/myCardsPage", component: card },
     {
         path: '/',
         redirect: '/home'
@@ -21,11 +17,15 @@ const routes = [
     },
     {
         path: '*',
-        components: NotFoundPage
+        component: NotFoundPage
+    },
+    {
+        path: '/customersPage',
+        component: customersPage
     },
 ];
 
-const router = new VueRouter({routes: routes});
+const router = new VueRouter({ routes: routes });
 
 Vue.use(VueRouter);
 

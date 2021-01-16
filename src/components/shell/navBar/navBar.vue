@@ -62,7 +62,7 @@ export default {
           id: 2,
           icon: "myCards",
           text: "My-Cards",
-          linkTo: "MyCardsPage",
+          linkTo: "myCardsPage",
           notifications: 0,
         },
         {
@@ -76,7 +76,7 @@ export default {
           id: 4,
           icon: "group",
           text: "Customers",
-          linkTo: "Customers",
+          linkTo: "customersPage",
           notifications: 3,
         },
       ],

@@ -1,13 +1,13 @@
 <template>
   <v-card :width="`${width}vw`" :height="`${height}vh`" class="card">
-    <v-img :src="card_image" />
-    <v-card-actions>
-      <v-card-title primary-title>
-        <v-row>
-          <h3 class="headline mb-0"></h3>
-          <div>{{ card_text }}</div>
-        </v-row>
-      </v-card-title>
+    <div class="header">
+      <slot name="header" />
+    </div>
+    <div>
+      <slot name="content" />
+    </div>
+    <v-card-actions class="actions">
+      <slot name="actions" />
     </v-card-actions>
   </v-card>
 </template>
@@ -15,18 +15,6 @@
 export default {
   name: "card",
   props: {
-    card_image: {
-      type: String,
-      default: "none", //todo: adding default picture
-    },
-    title: {
-      type: String,
-      default: "the card title",
-    },
-    card_text: {
-      type: String,
-      default: "the card text",
-    },
     width: {
       type: Number,
       default: 15,
@@ -43,16 +31,19 @@ export default {
 .card {
   margin: 7px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-  transition: all 0.2s ease-in-out;
-  z-index: 1;
-}
-.card:hover + .card{
-   transform: scale(0.8, 0.8);
+  transition: 500ms border ease-in-out;
 }
 .card:hover {
-  transform: scale(1.1, 1.1);
-  z-index: 2;
   border: 1px solid #295a84;
+  cursor: pointer;
 }
-
+.header {
+  width: fit-content;
+  margin: auto;
+  margin-top: 1vh;
+}
+.actions {
+  position: absolute;
+  bottom: 0px;
+}
 </style>

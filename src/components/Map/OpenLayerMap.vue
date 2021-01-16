@@ -2,7 +2,7 @@
   <div>
     <div ref="map" class="map"></div>
     <div class="search">
-      <actionBtn icon="home"/>
+      <!-- <actionBtn icon="home"/> -->
     </div>
   </div>
 </template>
@@ -17,12 +17,12 @@ import getTheUserLocation from "../../services/LocationService/LocationService";
 //import { createNamespacedHelpers } from 'vuex';
 //const { mapState, mapActions } = createNamespacedHelpers('');
 import { mapGetters } from "vuex";
-import actionBtn from "../../components/Pages/cardsPage/actionBar/actionBtn";
+// import actionBtn from "../../components/Pages/cardsPage/actionBar/actionBtn";
 
 export default {
   name: "OpenLayerMap",
   components: {
-    actionBtn,
+    // actionBtn,
   },
   mounted() {
     getTheUserLocation();

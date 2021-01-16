@@ -6,6 +6,7 @@
     <card />
     <card />
     <card />
+    <customer-card />
     <card />
     <card />
     <card />
@@ -27,11 +28,13 @@
   </v-row>
 </template>
 <script>
+import customerCard from "../customersPage/customerCard.vue";
 import card from "./card.vue";
 export default {
-  name: "cardPage",
+  name: "CardPage",
   components: {
     card,
+    customerCard,
   },
   props: {},
 };
